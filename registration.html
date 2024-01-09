@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration Form</title>
+    
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+        }
+        .container{
+            background-color: #f2f2f2;
+            padding: 5px 20px 5px 20px;
+            border: 1px solid lightgray;
+            border-radius: 4px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        fieldset{
+            background-color: #fff;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"]{
+            background-color: #4daea1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <form get="" action="">
+        <!-- inline css -->
+       <h1 style="color:yellowgreen" align="center">Registration Form</h1>
+       <hr>
+       <p style="font-size: 10px; font-weight:900">NOTE :- All fields are Required</p>
+       
+       <p>Name: <input type="text" name="name" required></p>
+       <p>Password: <input type="password" name="password" required></p>
+       <p>Email: <input type="email" name="email" id="email" required></p>
+       <p>Phone Number <input type="number" name="number" id="number"></p>
+
+       <fieldset>
+        <legend>Gender</legend>
+        <p>Male <input type="radio" name="gender" id="male" required> Female <input type="radio" name="gender" id="female" required></p>
+       </fieldset>
+
+       <p>Date of Birth: <input type="date" name="exp_date" id="exp_date" required></p> 
+
+       <fieldset>
+        <legend>Languages known</legend>
+        <p>Hindi <input type="checkbox" name="hindi" required> English <input type="checkbox" name="english" required>
+        Telugu <input type="checkbox" name="telugu" required> Tamil <input type="checkbox" name="tamil"></p>
+       </fieldset>
+
+       <!--textarea for a long paragraph-->
+       <p>Address: <textarea name="address" id="address" cols="100" rows="5"></textarea></p>
+       <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+       
+       
+       <br><hr>
+
+       <input type="submit" value="Submit"><hr><br>
+       <p>Already a member ?<a href="login.html" >Login Now</a></p>
+    </form>
+    <br>
+</div>
+</body>
+</html>
