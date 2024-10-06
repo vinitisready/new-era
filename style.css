@@ -1,3 +1,6 @@
+@media all and (max-width: 768px) { // ipad width in portrait 
+    body {font-size: 0.7em}
+}
 *{
   box-sizing: border-box;
   margin: 0;
